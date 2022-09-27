@@ -10,7 +10,7 @@ class Solution:
         for char in str1:
             if char != "#":
                 result.append(char)
-            else:
-                if result: result.pop()
+            elif result: 
+                result.pop()
                 
         return "".join(result)
